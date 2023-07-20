@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #5F2C82;
+    height: 100vh;
+    width: 100vw;
+}
+h2{
+    text-align: center;
+    padding-bottom: 10px;
+}
+p{
+    font-size: 13px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 250px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.307);
+}
+#imagem{
+    height: 40%;
+    background-image: url("pexels-lawlesscapture-13737660.jpg");
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#content{
+    padding: 8px;
+}
+#login {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#login > div{
+    display: flex;
+    background: #5F2C82;
+    border: 0;
+    height: 40px;
+    border-radius: 8px;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2px;
+    padding-left: 8px;
+    align-items:end;
+}
+#login > div > span{
+    color: white;
+}
+#login > input:hover{
+    background: #2D6462;
+}
+input {
+    border: 0;
+    border-radius: 10px;
+    height: 100%;
+    width: 80%;
+    background: #94CFCD;
+    font-size: 14px;
+    padding: 5px;
+}
+.material-symbols-rounded {
+    font-size: 30px;
+}
+.button {
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.button:nth-of-type(1) {
+    background: #53aeab;
+}
+#button2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid #53aeab;
+    color: #2D6462;
+    background: white;
+}
+#button2:hover {
+    background: #6CD3CF;
+}
+#button2 > p{
+    font-size: 15px;
+}
+@media screen and (min-width: 768px) {
+    body {
+        background: linear-gradient(#5F2C82, #4B989B)
+    }
+    main{
+        flex-direction: row;
+        width: 80%;
+        height: 280px;
+    }
+    #imagem {
+        height: 100%;
+        width: 290px;
+        border-radius: 0;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+    input{
+        width: 90%;
+    }
+}
+@media screen and (min-width: 992px) {
+    h2{
+        font-size: 32px;
+        padding-bottom: 20px;
+    }
+    p {
+        font-size: 16px;
+    }
+    main{
+        width: 95%;
+        height: 350px;
+        width: 952px;
+    }
+    #imagem {
+        order: 2;
+        width: 50%;
+        border-radius: 0;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    #content{
+        order: 1;
+        width: 50%;
+    }
+    img{
+        border-radius: 0;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    #login {
+        padding-top: 20px;
+    }
+}
